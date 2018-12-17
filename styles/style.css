@@ -1,0 +1,121 @@
+body {
+    background-color: #3b3f45;
+    font-family: sans-serif;
+    border: 20px solid white;
+    margin: 0;
+    height: 100vh;
+}
+
+ * {
+    box-sizing: border-box;
+}
+
+header, footer{
+    text-align: center;
+    color: #eb7e7f;
+    background-color: #4a4f56;
+    padding: 5px 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+header h2 {
+    margin-top: 0;
+}
+
+main {
+    text-align: center;
+    background-color: #88839e;
+    margin: 40px auto;
+    width: 70%;
+}
+
+ul.shopping-list li label span {
+    position: relative;
+    bottom: 2px;
+    font-size: 12px;
+    color: #b1b1c5;
+
+}
+
+footer {
+    margin: 0 auto 0;
+    width: 70%;
+}
+
+ul.shopping-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 25px;
+    color: #ffffff;
+   /* line-height: 2.2;*/
+}
+
+ul.shopping-list li {
+    position: relative;
+}
+
+ul.shopping-list li input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    top: 14px;
+    left: 6px;
+}
+
+ul.shopping-list li label {
+    display: block;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding: 6px 6px 6px 30px;
+    transition: all 0.4s;
+
+}
+
+/*li {
+    padding-left: 20px;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;*/
+/*
+}
+ul li:nth-child(2n) {
+    background-color: #7a7593;
+}
+*/
+
+/*.label {
+    transition: 0.5s;
+}*/
+
+input:checked + label {
+    color: #b1b1c5;
+    text-decoration: line-through;
+    background-color: #7a7593;
+}
+
+ul.shopping-list li label:hover,
+ul.shopping-list li input[type="checkbox"]:hover + label {
+    cursor: pointer;
+    background-color: #625e77;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+
+/*input[type="checkbox"] {
+    transform: scale(1.9);
+}*/
+
+/*
+ul li:hover {
+    background-color: #625e77;
+    border-bottom: 4px solid white;
+    border-top: 4px solid white;
+}*/
